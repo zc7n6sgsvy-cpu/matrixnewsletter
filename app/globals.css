@@ -673,3 +673,35 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   * { animation: none !important; scroll-behavior: auto !important; }
   #rain { opacity: 0.18; }
 }
+
+/* Beehiiv reader styles (dark/matrix friendly) */
+.beehiiv-reader {
+  color: #d1e8d8;
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+.beehiiv-reader h1,
+.beehiiv-reader h2,
+.beehiiv-reader h3 {
+  color: #dffaee;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.beehiiv-reader a {
+  color: #54f0a0;
+  text-decoration: underline;
+}
+.beehiiv-reader p,
+.beehiiv-reader li {
+  color: #b3d3c0;
+}
+.beehiiv-reader img {
+  border-radius: 8px;
+  border: 1px solid #15301f;
+}
+.beehiiv-reader pre,
+.beehiiv-reader code {
+  background: #040706;
+  color: #54f0a0;
+}

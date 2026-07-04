@@ -30,6 +30,8 @@ export const metadata: Metadata = {
   },
 };
 
+import Link from 'next/link';
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +39,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${sans.variable} ${mono.variable} h-full antialiased`}>
-      <body className="min-h-full bg-[#040706] text-[#dffaee]">{children}</body>
+      <body className="min-h-full bg-[#040706] text-[#dffaee]">
+        <header className="border-b border-[#15301f] bg-[#040706]/95 backdrop-blur sticky top-0 z-50">
+          <nav className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16 text-sm font-mono">
+            <Link href="/" className="flex items-center gap-2 font-bold tracking-[2px] hover:text-[#54f0a0] transition-colors">
+              <span className="text-[#54f0a0]">▚</span> MATRIX NEWSLETTER
+            </Link>
+            <div className="flex items-center gap-8 text-[#54f0a0]/80">
+              <Link href="/archive" className="hover:text-[#54f0a0] transition-colors">ARCHIVE</Link>
+              <Link href="/#subscribe" className="hover:text-[#54f0a0] transition-colors">SUBSCRIBE</Link>
+              <a href="https://github.com/zc7n6sgsvy-cpu/matrixnewsletter" target="_blank" className="hover:text-[#54f0a0] transition-colors">SOURCE</a>
+            </div>
+          </nav>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }

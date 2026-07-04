@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  metadataBase: new URL("https://matrixnewsletter.com"),
   openGraph: {
     title: "Matrix Newsletter — Decode the signal",
     description: "Encrypted transmission · weekly · 0 noise. Join 42,000 readers.",

@@ -1,22 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Matrix Newsletter
 
-## Getting Started
+**matrixnewsletter.com** — Decode the signal. Weekly transmissions. Zero noise.
 
-First, run the development server:
+A beautiful terminal-inspired landing page for Matrix Newsletter. Exact recreation of the original design with live Matrix rain, text decode effects, animated counters, and working (mock) subscribe flows.
+
+## Live
+
+- Vercel: https://matrixnewsletter-five.vercel.app
+- GitHub: https://github.com/zc7n6sgsvy-cpu/matrixnewsletter
+
+## Tech
+
+- Next.js 16 (App Router, Turbopack)
+- TypeScript + Tailwind
+- Self-contained Matrix canvas + animations (no external deps)
+
+## Local dev
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Connected to Vercel + GitHub. Every push to `main` auto-deploys.
+
+## Custom domain
+
+Add `matrixnewsletter.com` in the Vercel project dashboard (Domains tab). Follow the DNS instructions (CNAME or A records). The domain is already registered.
+
+## Next steps ideas
+
+- Real subscribe endpoint (e.g. Beehiiv / Mailchimp / Resend)
+- Archive page with past issues
+- RSS feed
+- Admin for sending transmissions
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 

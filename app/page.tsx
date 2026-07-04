@@ -29,7 +29,7 @@ export default function MatrixNewsletter() {
     let cols = 0;
     let drops: number[] = [];
     let fontSize = 16;
-    let animationFrame: number;
+    let animationFrame: number | null = null;
     let interval: NodeJS.Timeout | null = null;
 
     const resize = () => {
